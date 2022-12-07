@@ -1,0 +1,18 @@
+{
+  "galleryImgs": [
+    {"img": "./imgs/gallery/img1.jpg"},
+    {"img": "./imgs/gallery/img2.jpg"},
+    {"img": "./imgs/gallery/img3.jpg"},
+    {"img": "./imgs/gallery/img4.jpg"},
+    {"img": "./imgs/gallery/img5.jpg"},
+    {"img": "./imgs/gallery/img6.jpg"},
+    {"img": "./imgs/gallery/img7.jpg"},
+    {"img": "./imgs/gallery/img8.jpg"},
+    {"img": "./imgs/gallery/img9.jpg"},
+    {"img": "./imgs/gallery/img10.jpg"},
+    {"img": "./imgs/gallery/img11.jpg"},
+    {"img": "./imgs/gallery/img12.jpg"},
+    {"img": "./imgs/gallery/img13.jpg"},
+    {"img": "./imgs/gallery/img14.jpg"}
+  ]
+  }
