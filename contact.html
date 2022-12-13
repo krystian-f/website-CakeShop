@@ -7,7 +7,15 @@
   <title>Contact</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+  crossorigin=""/>
+
   <script src="./js/app.js" type="module" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+</script> 
 </head>
 <body>
 
@@ -49,6 +57,33 @@
   </div>
 </header>
 <!-- Header End -->
+
+<!-- Contact Start-->
+<section class="contact section--wide">
+  <div class="contact__content section--content">  
+    <h2 class="section__header gallery__header">Contact</h2>
+    <div class="contact__sections">
+      <div class="contact__form contact__section">
+        <form action="" method="post" class="contact__form-form">
+          <label for="name" class="form__label">Name:</label>
+          <input type="text" name="name" id="name" class="form__input">
+          <label for="email" class="form__label">Email:</label>
+          <input type="email" name="email" id="email" class="form__input">
+          <label for="tel" class="form__label">Telephone:</label>
+          <input type="tel" name="tel" id="tel" class="form__input">
+          <label for="message" class="form__label">Message:</label>
+          <textarea name="message" id="message" class="form__message" cols="30" rows="10" maxlength="250"></textarea>
+          <input type="submit" value="Submit" class="form__submit">
+        </form>
+
+      </div>
+      <div class="contact__map contact__section">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Footer Start-->
 <footer class="section--wide footer-main">
