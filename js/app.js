@@ -8,13 +8,17 @@ import { generateGallery,
   navigationButtons,
   enlargeItem }  
 from './gallery.js';
+import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from './blog.js';
+
 
 // DOM
-const overlay = document.querySelector('overlay');
+const overlay = document.querySelector('.overlay');
 const sliderBtns = document.querySelectorAll('.slider__btn')
 const sliderBtnPrev = document.querySelector('.slider__btn-prev');
 const sliderBtnNext = document.querySelector('.slider__btn-next');
 const slides =  document.querySelectorAll('.slide');
+const navBtn = document.querySelector('.nav__hamburger');
+const nav = document.querySelector('.nav__main-container');
 
 // Call functions
 window.addEventListener("load", () => {
@@ -35,6 +39,10 @@ window.addEventListener("load", () => {
 
   if( subPageName === '/blog.html'){
     console.log('blog');
+    getPagination();
+    setBlogPage(1);
+    addPageNumbersBlog();
+    blogNavigationButtons();
   }
 
   if( subPageName === '/contact.html'){
@@ -90,4 +98,10 @@ sliderBtns.forEach((btn)=>{
       displaySlide();
     })
   }
+})
+
+// Navigation hamburger
+navBtn.addEventListener('click', () =>{
+  nav.classList.toggle('active');
+  overlay.classList.toggle('active');
 })

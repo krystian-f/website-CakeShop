@@ -3,7 +3,7 @@
   --second-bg-clr: hsl(20, 10%, 97%);
   --third-bg-clr: hsl(20, 12%, 90%);
   --footer-bg-clr: hsl(0, 0%, 10%);
-  --overlay-bg-clr: rgba(0, 0, 0, 0.9);
+  --overlay-bg-clr: rgba(0, 0, 0, 0.7);
   --nav-bg-clr: hsla(0, 0%, 100%, .9);
   --bg-header: hsl(30, 70%, 85%);
   --bg-slider-btns: hsl(30, 70%, 80%);
@@ -75,7 +75,7 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 30;
+  z-index: 90;
   display: none;
 }
 
@@ -670,6 +670,7 @@ padding: 0 1rem;
 
   .nav__main-container{
     min-height: 100vh;
+    max-height: 100%;
     max-width: 30rem;
     background-color: var(--nav-bg-clr);
     flex-direction: column;
@@ -681,9 +682,14 @@ padding: 0 1rem;
     display:none;
    }
 
+   .nav__main-container.active{
+    display: flex;
+   }
+
   .nav__hamburger{
     display: block;
     margin-left: auto;
+    z-index: 100;
   }
 
   .nav__logo{

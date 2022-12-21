@@ -68,11 +68,11 @@ const setActivePage = function displayActivePage(pageNum){
   pageNumbers.forEach((button) => {
     const pageIndex = Number(button.getAttribute("page-index"));
 
-  if(pageIndex) {
-    button.addEventListener('click', () => {
-      setActivePage(pageIndex);
-    })
-    }    
+    if(pageIndex) {
+      button.addEventListener('click', () => {
+        setActivePage(pageIndex);
+      })
+      }    
   })
 
  };
