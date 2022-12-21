@@ -9,8 +9,8 @@ import { generateGallery,
   enlargeItem,
   galleryButtonsEffects
  }  
-from './gallery.js';
-import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from './blog.js';
+from '../js/gallery.js';
+import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from '../js/blog.js';
 
 
 // DOM
