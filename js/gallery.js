@@ -203,7 +203,8 @@ export {
   setActivePage,
   addPageNumbers,
   navigationButtons,
-  enlargeItem
+  enlargeItem,
+  galleryButtonsEffects
 };
 
 

@@ -6,7 +6,9 @@ import { generateGallery,
   setActivePage,
   addPageNumbers,
   navigationButtons,
-  enlargeItem }  
+  enlargeItem,
+  galleryButtonsEffects
+ }  
 from './gallery.js';
 import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from './blog.js';
 
@@ -30,7 +32,7 @@ window.addEventListener("load", () => {
     navigationButtons();
     addPageNumbers();
     enlargeItem(galleryImgs);
-    // galleryButtonsEffects();
+    galleryButtonsEffects();
   } 
 
   if( subPageName === '/shop.html'){
