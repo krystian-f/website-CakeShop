@@ -1,6 +1,6 @@
 "use strict";
 // Data
-import galleryImgs from '../js/gallery.json' assert {type: 'json'};
+import galleryImgs from './gallery.json' assert {type: 'json'};
 import { generateGallery, 
   getPaginationNumbers,
   setActivePage,
@@ -9,8 +9,8 @@ import { generateGallery,
   enlargeItem,
   galleryButtonsEffects
  }  
-from '../js/gallery.js';
-import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from '../js/blog.js';
+from './gallery.js';
+import {getPagination, setBlogPage, addPageNumbersBlog, blogNavigationButtons} from './blog.js';
 
 
 // DOM
